@@ -275,7 +275,7 @@ public class WeixinUserController {
 		logger.debug("userLiveClassWeixinPay fee : {}", fee);
 		WxPayDto tpWxPay = new WxPayDto();
 		tpWxPay.setOpenId(openId);
-		tpWxPay.setBody("点都大讲堂直播课");
+		tpWxPay.setBody("梦想笔记直播课");
 		tpWxPay.setOrderId(WeixinPayUtils.getNonceStr());
 		tpWxPay.setSpbillCreateIp(request.getRemoteAddr());
 		tpWxPay.setTotalFee(fee);
@@ -369,7 +369,7 @@ public class WeixinUserController {
 		logger.debug("userLiveClassDonateWeixinPay fee : {}", fee);
 		WxPayDto tpWxPay = new WxPayDto();
 		tpWxPay.setOpenId(openId);
-		tpWxPay.setBody("点都大讲堂直播讲座");
+		tpWxPay.setBody("梦想笔记直播讲座");
 		tpWxPay.setOrderId(WeixinPayUtils.getNonceStr());
 		tpWxPay.setSpbillCreateIp(request.getRemoteAddr());
 		tpWxPay.setTotalFee(fee);
@@ -470,7 +470,7 @@ public class WeixinUserController {
 		logger.debug("userChooseWeixinPay fee : {}", fee);
 		WxPayDto tpWxPay = new WxPayDto();
 		tpWxPay.setOpenId(openId);
-		tpWxPay.setBody("点都大讲堂VIP会员");
+		tpWxPay.setBody("梦想笔记VIP会员");
 		tpWxPay.setOrderId(WeixinPayUtils.getNonceStr());
 		tpWxPay.setSpbillCreateIp(request.getRemoteAddr());
 		tpWxPay.setTotalFee(fee);

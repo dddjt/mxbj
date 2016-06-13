@@ -78,7 +78,7 @@ public class MessageProcessServiceImpl implements IMessageProcessService {
 						}
 					});
 					TextOutputMessage outputMsg = new TextOutputMessage();
-					//outputMsg.setContent("客官，等您很久了～这里既分享各类线下讲座的内容，也允许优质机构和个人在线开办讲座，让用户足不出户参与讲座，并和导师互动。快点击“点豆大讲堂”来看看我们吧～");
+					//outputMsg.setContent("客官，等您很久了～这里既分享各类线下讲座的内容，也允许优质机构和个人在线开办讲座，让用户足不出户参与讲座，并和导师互动。快点击“梦想笔记”来看看我们吧～");
 					outputMsg.setContent("欢迎关注［梦想笔记］，这里每天和您分享互联网圈的精彩演讲。点击“梦想学院”，看过往演讲集锦；点击“案例录播”，看当下最热项目的分享。");
 					try {
 						setOutputMsgInfo(outputMsg, inputMsg);

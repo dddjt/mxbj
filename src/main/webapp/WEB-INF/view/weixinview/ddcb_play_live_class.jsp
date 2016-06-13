@@ -77,7 +77,7 @@ LiveCourseShareModel lcsm = liveClassShareDao.getLiveClassShareByCourseId(id);
 		<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
 		<meta name="keywords" content="" />
 		<meta name="description" content="" />
-		<title>点豆大讲堂</title>
+		<title>梦想笔记</title>
 		<link rel="stylesheet" href="/css/weixincss/bootstrap.min.css">
 		<link rel="stylesheet" href="/css/weixincss/style.css">
 		<link rel="stylesheet" href="/css/weixincss/newplay.css">
@@ -274,19 +274,19 @@ video::-webkit-media-controls-volume-slider {} */
 				if(currentDate - courseDate >= document.getElementById("video").duration) {
 					//document.getElementById("video").pause();
 					<%if(("exist").equals(parentCourseExist)) {%>
-					document.getElementById("playClassTimeTips").innerHTML = "<p style='color:white;padding-top:50px;'>录播讲座已经结束，感谢您的关注！</p><p id='redirect_open_class' style='color:white;'>大讲堂已收录该讲座</p>";
+					document.getElementById("playClassTimeTips").innerHTML = "<p style='color:white;padding-top:50px;'>案例录播已经结束，感谢您的关注！</p><p id='redirect_open_class' style='color:white;'>梦想笔记已收录该讲座</p>";
 					var countDown = 5;
 					var timer = setInterval(function(){
 						if(countDown == 0) {
 							clearInterval(timer);
 							window.location.href = "/playDDCBOpenClass?course_id=<%=parentCm.getId() %>";
 						} else {
-							document.getElementById("redirect_open_class").innerHTML = "大讲堂已收录该讲座,"+countDown+"秒后自动跳转。";
+							document.getElementById("redirect_open_class").innerHTML = "梦想笔记已收录该讲座,"+countDown+"秒后自动跳转。";
 						}
 						countDown--;
 					}, 1000);
 					<%} else {%>
-					document.getElementById("playClassTimeTips").innerHTML = "<p style='color:white;padding-top:50px;'>录播讲座已经结束，感谢您的关注！</p><p style='color:white;'>大讲堂正在收录该讲座，<br/>稍后请至大讲堂查看。</p>";
+					document.getElementById("playClassTimeTips").innerHTML = "<p style='color:white;padding-top:50px;'>案例录播已经结束，感谢您的关注！</p><p style='color:white;'>梦想笔记正在收录该讲座，<br/>稍后请至梦想笔记查看。</p>";
 					<%}%>		
 					document.getElementById("playClassTimeTips").style.display = "";
 					document.getElementById("video_div").style.display = "none";
@@ -314,19 +314,19 @@ video::-webkit-media-controls-volume-slider {} */
 				if(currentDate - courseDate >= document.getElementById("video").duration) {
 					//document.getElementById("video").pause();
 					<%if(("exist").equals(parentCourseExist)) {%>
-					document.getElementById("playClassTimeTips").innerHTML = "<p style='color:white;padding-top:50px;'>录播讲座已经结束，感谢您的关注！</p><p id='redirect_open_class' style='color:white;'>大讲堂已收录该讲座</p>";
+					document.getElementById("playClassTimeTips").innerHTML = "<p style='color:white;padding-top:50px;'>案例录播已经结束，感谢您的关注！</p><p id='redirect_open_class' style='color:white;'>梦想笔记已收录该讲座</p>";
 					var countDown = 5;
 					var timer = setInterval(function(){
 						if(countDown == 0) {
 							clearInterval(timer);
 							window.location.href = "/playDDCBOpenClass?course_id=<%=parentCm.getId() %>";
 						} else {
-							document.getElementById("redirect_open_class").innerHTML = "大讲堂已收录该讲座,"+countDown+"秒后自动跳转。";
+							document.getElementById("redirect_open_class").innerHTML = "梦想笔记已收录该讲座,"+countDown+"秒后自动跳转。";
 						}
 						countDown--;
 					}, 1000);
 					<%} else {%>
-					document.getElementById("playClassTimeTips").innerHTML = "<p style='color:white;padding-top:50px;'>录播讲座已经结束，感谢您的关注！</p><p style='color:white;'>大讲堂正在收录该讲座，<br/>稍后请至大讲堂查看。</p>";
+					document.getElementById("playClassTimeTips").innerHTML = "<p style='color:white;padding-top:50px;'>案例录播已经结束，感谢您的关注！</p><p style='color:white;'>梦想笔记正在收录该讲座，<br/>稍后请至梦想笔记查看。</p>";
 					<%}%>		
 					document.getElementById("playClassTimeTips").style.display = "";
 					document.getElementById("video_div").style.display = "none";
@@ -369,19 +369,19 @@ video::-webkit-media-controls-volume-slider {} */
 								globalPlayStatus = "end";
 								//document.getElementById("video").pause();
 								<%if(("exist").equals(parentCourseExist)) {%>
-								document.getElementById("playClassTimeTips").innerHTML = "<p style='color:white;padding-top:50px;'>录播讲座已经结束，感谢您的关注！</p><p id='redirect_open_class' style='color:white;'>大讲堂已收录该讲座</p>";
+								document.getElementById("playClassTimeTips").innerHTML = "<p style='color:white;padding-top:50px;'>案例录播已经结束，感谢您的关注！</p><p id='redirect_open_class' style='color:white;'>梦想笔记已收录该讲座</p>";
 								var countDown = 5;
 								var timer = setInterval(function() {
 									if (countDown == 0) {
 										clearInterval(timer);
 										window.location.href = "/playDDCBOpenClass?course_id=<%=parentCm.getId() %>";
 									} else {
-										document.getElementById("redirect_open_class").innerHTML = "大讲堂已收录该讲座," + countDown + "秒后自动跳转。";
+										document.getElementById("redirect_open_class").innerHTML = "梦想笔记已收录该讲座," + countDown + "秒后自动跳转。";
 									}
 									countDown--;
 								}, 1000);
 								<%} else {%>
-								document.getElementById("playClassTimeTips").innerHTML = "<p style='color:white;padding-top:50px;'>录播讲座已经结束，感谢您的关注！</p><p style='color:white;'>大讲堂正在收录该讲座，<br/>稍后请至大讲堂查看。</p>";
+								document.getElementById("playClassTimeTips").innerHTML = "<p style='color:white;padding-top:50px;'>案例录播已经结束，感谢您的关注！</p><p style='color:white;'>梦想笔记正在收录该讲座，<br/>稍后请至梦想笔记查看。</p>";
 								<%}%>
 								document.getElementById("playClassTimeTips").style.display = "";
 								document.getElementById("video_div").style.display = "none";
@@ -402,19 +402,19 @@ video::-webkit-media-controls-volume-slider {} */
 				//$("#question_publish").hide();
 				document.getElementById("video").pause();
 				<%if(("exist").equals(parentCourseExist)) {%>
-				document.getElementById("playClassTimeTips").innerHTML = "<p style='color:white;padding-top:50px;'>录播讲座已经结束，感谢您的关注！</p><p id='redirect_open_class' style='color:white;'>大讲堂已收录该讲座</p>";
+				document.getElementById("playClassTimeTips").innerHTML = "<p style='color:white;padding-top:50px;'>案例录播已经结束，感谢您的关注！</p><p id='redirect_open_class' style='color:white;'>梦想笔记已收录该讲座</p>";
 				var countDown = 5;
 				var timer = setInterval(function(){
 					if(countDown == 0) {
 						clearInterval(timer);
 						window.location.href = "/playDDCBOpenClass?course_id=<%=parentCm.getId() %>";
 					} else {
-						document.getElementById("redirect_open_class").innerHTML = "大讲堂已收录该讲座,"+countDown+"秒后自动跳转。";
+						document.getElementById("redirect_open_class").innerHTML = "梦想笔记已收录该讲座,"+countDown+"秒后自动跳转。";
 					}
 					countDown--;
 				}, 1000);
 				<%} else {%>
-				document.getElementById("playClassTimeTips").innerHTML = "<p style='color:white;padding-top:50px;'>录播讲座已经结束，感谢您的关注！</p><p style='color:white;'>大讲堂正在收录该讲座，<br/>稍后请至大讲堂查看。</p>";
+				document.getElementById("playClassTimeTips").innerHTML = "<p style='color:white;padding-top:50px;'>案例录播已经结束，感谢您的关注！</p><p style='color:white;'>梦想笔记正在收录该讲座，<br/>稍后请至梦想笔记查看。</p>";
 				<%}%>		
 			} else {
 				var hasSetTime = false;
@@ -426,19 +426,19 @@ video::-webkit-media-controls-volume-slider {} */
 						if(currentDate - courseDate >= document.getElementById("video").duration) {
 							//document.getElementById("video").pause();
 							<%if(("exist").equals(parentCourseExist)) {%>
-							document.getElementById("playClassTimeTips").innerHTML = "<p style='color:white;padding-top:50px;'>录播讲座已经结束，感谢您的关注！</p><p id='redirect_open_class' style='color:white;'>大讲堂已收录该讲座</p>";
+							document.getElementById("playClassTimeTips").innerHTML = "<p style='color:white;padding-top:50px;'>案例录播已经结束，感谢您的关注！</p><p id='redirect_open_class' style='color:white;'>梦想笔记已收录该讲座</p>";
 							var countDown = 5;
 							var timer = setInterval(function(){
 								if(countDown == 0) {
 									clearInterval(timer);
 									window.location.href = "/playDDCBOpenClass?course_id=<%=parentCm.getId() %>";
 								} else {
-									document.getElementById("redirect_open_class").innerHTML = "大讲堂已收录该讲座,"+countDown+"秒后自动跳转。";
+									document.getElementById("redirect_open_class").innerHTML = "梦想笔记已收录该讲座,"+countDown+"秒后自动跳转。";
 								}
 								countDown--;
 							}, 1000);
 							<%} else {%>
-							document.getElementById("playClassTimeTips").innerHTML = "<p style='color:white;padding-top:50px;'>录播讲座已经结束，感谢您的关注！</p><p style='color:white;'>大讲堂正在收录该讲座，<br/>稍后请至大讲堂查看。</p>";
+							document.getElementById("playClassTimeTips").innerHTML = "<p style='color:white;padding-top:50px;'>案例录播已经结束，感谢您的关注！</p><p style='color:white;'>梦想笔记正在收录该讲座，<br/>稍后请至梦想笔记查看。</p>";
 							<%}%>		
 							document.getElementById("playClassTimeTips").style.display = "";
 							document.getElementById("video_div").style.display = "none";
@@ -457,19 +457,19 @@ video::-webkit-media-controls-volume-slider {} */
 						globalPlayStatus = "end";
 						//document.getElementById("video").pause();
 						<%if(("exist").equals(parentCourseExist)) {%>
-						document.getElementById("playClassTimeTips").innerHTML = "<p style='color:white;padding-top:50px;'>录播讲座已经结束，感谢您的关注！</p><p id='redirect_open_class' style='color:white;'>大讲堂已收录该讲座</p>";
+						document.getElementById("playClassTimeTips").innerHTML = "<p style='color:white;padding-top:50px;'>案例录播已经结束，感谢您的关注！</p><p id='redirect_open_class' style='color:white;'>梦想笔记已收录该讲座</p>";
 						var countDown = 5;
 						var timer = setInterval(function(){
 							if(countDown == 0) {
 								clearInterval(timer);
 								window.location.href = "/playDDCBOpenClass?course_id=<%=parentCm.getId() %>";
 							} else {
-								document.getElementById("redirect_open_class").innerHTML = "大讲堂已收录该讲座,"+countDown+"秒后自动跳转。";
+								document.getElementById("redirect_open_class").innerHTML = "梦想笔记已收录该讲座,"+countDown+"秒后自动跳转。";
 							}
 							countDown--;
 						}, 1000);
 						<%} else {%>
-						document.getElementById("playClassTimeTips").innerHTML = "<p style='color:white;padding-top:50px;'>录播讲座已经结束，感谢您的关注！</p><p style='color:white;'>大讲堂正在收录该讲座，<br/>稍后请至大讲堂查看。</p>";
+						document.getElementById("playClassTimeTips").innerHTML = "<p style='color:white;padding-top:50px;'>案例录播已经结束，感谢您的关注！</p><p style='color:white;'>梦想笔记正在收录该讲座，<br/>稍后请至梦想笔记查看。</p>";
 						<%}%>		
 						document.getElementById("playClassTimeTips").style.display = "";
 						document.getElementById("video_div").style.display = "none";
@@ -516,25 +516,25 @@ video::-webkit-media-controls-volume-slider {} */
 		} else {
 			if(courseDate + courseLength < currentDate) {
 				<%if(("exist").equals(parentCourseExist)) {%>
-				document.getElementById("playClassTimeTips").innerHTML = "<p style='color:white;padding-top:50px;'>录播讲座已经结束，感谢您的关注！</p><p id='redirect_open_class' style='color:white;'>大讲堂已收录该讲座</p>";
+				document.getElementById("playClassTimeTips").innerHTML = "<p style='color:white;padding-top:50px;'>案例录播已经结束，感谢您的关注！</p><p id='redirect_open_class' style='color:white;'>梦想笔记已收录该讲座</p>";
 				var countDown = 5;
 				var timer = setInterval(function(){
 					if(countDown == 0) {
 						clearInterval(timer);
 						window.location.href = "/playDDCBOpenClass?course_id=<%=parentCm.getId() %>";
 					} else {
-						document.getElementById("redirect_open_class").innerHTML = "大讲堂已收录该讲座,"+countDown+"秒后自动跳转。";
+						document.getElementById("redirect_open_class").innerHTML = "梦想笔记已收录该讲座,"+countDown+"秒后自动跳转。";
 					}
 					countDown--;
 				}, 1000);
 				<%} else {%>
-				document.getElementById("playClassTimeTips").innerHTML = "<p style='color:white;padding-top:50px;'>录播讲座已经结束，感谢您的关注！</p><p style='color:white;'>大讲堂正在收录该讲座，<br/>稍后请至大讲堂查看。</p>";
+				document.getElementById("playClassTimeTips").innerHTML = "<p style='color:white;padding-top:50px;'>案例录播已经结束，感谢您的关注！</p><p style='color:white;'>梦想笔记正在收录该讲座，<br/>稍后请至梦想笔记查看。</p>";
 				<%}%>		
 			} else {
 				<%if(("4").equals(userStatus)){%>
-				document.getElementById("playClassTimeTips").innerHTML = "<p style='color:white;padding-top:50px;'>录播讲座中......</p><p style='color:white;'>您还没有购买当前课程，无法观看！</p>";
+				document.getElementById("playClassTimeTips").innerHTML = "<p style='color:white;padding-top:50px;'>案例录播中......</p><p style='color:white;'>您还没有购买当前课程，无法观看！</p>";
 				<%} else {%>
-				document.getElementById("playClassTimeTips").innerHTML = "<p style='color:white;padding-top:50px;'>录播讲座中......</p><p style='color:white;'>您还没有在朋友圈分享当前课程，无法观看！</p>";
+				document.getElementById("playClassTimeTips").innerHTML = "<p style='color:white;padding-top:50px;'>案例录播中......</p><p style='color:white;'>您还没有在朋友圈分享当前课程，无法观看！</p>";
 				<%}%>		
 			}
 		}
@@ -553,13 +553,13 @@ video::-webkit-media-controls-volume-slider {} */
 	});
 	<%-- var imgUrl = "http://www.dreamnotechina.com/img/weixinimg/share_img.jpg";
 	var lineLink = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx519f44ba99e2ec36&redirect_uri=http%3A%2F%2Fwww.dreamnotechina.com%2Fweixin%2FweixinLogin%3Fview%3Dddcb_live_class&response_type=code&scope=snsapi_userinfo&state=123#wechat_redirect";
-	var descContent = "点豆大讲堂---为进取心而生，专注职场“传、帮、带”";
-	var shareTitle = "点豆大讲堂";
-	var shareCircleTitle = "录播-<%=cm.getName()%>-<%=cm.getTeacher()%>-[点豆大讲堂]";
+	var descContent = "梦想笔记---为进取心而生，专注职场“传、帮、带”";
+	var shareTitle = "梦想笔记";
+	var shareCircleTitle = "录播-<%=cm.getName()%>-<%=cm.getTeacher()%>-[梦想笔记]";
 	<%if (list != null && !list.isEmpty()) {%>
 		imgUrl = "http://www.dreamnotechina.com/files/imgs/<%=cm.getImage()%>";
 		descContent = "主讲人：<%=cm.getTeacher()%>";
-		shareTitle = "录播-<%=cm.getName()%>-[点豆大讲堂]";
+		shareTitle = "录播-<%=cm.getName()%>-[梦想笔记]";
 	<%}%> --%>
 wx.ready(function() {
 setTimeout(function() {
@@ -568,7 +568,7 @@ setTimeout(function() {
 		link : lineLink, // 分享链接
 		imgUrl : imgUrl, // 分享图标
 		success : function() {
-			$.ajax({
+			<%-- $.ajax({
         		url: "/course/uploadUserShare",
         		type: "POST",
         		data: {courseId:"<%=cm.getId()%>"},
@@ -579,7 +579,7 @@ setTimeout(function() {
         		error: function(status, error) {
         			alert("报名失败！");
         		}
-        	});			
+        	}); --%>			
 		},
 		cancel : function() {
 			// 用户取消分享后执行的回调函数

@@ -206,7 +206,7 @@ div.screening>ul>li {
 			<div class="screening" style="z-index:199;">
 				<ul>
 					<li class="industry" style="font-size:10px;">行业</li>
-					<li class="competency" style="font-size:10px;">职能</li>
+					<li class="competency" style="font-size:10px;">阶段</li>
 					<li class="latestOrHotest" style="font-size:10px;">最新</li>
 				</ul>
 			</div>
@@ -248,14 +248,15 @@ div.screening>ul>li {
 					<div class="mui-scroll">
 						<ul class="mui-table-view">
 							<li style="background:#eee;" class="mui-table-view-cell" onclick="clickCompetency(this)">全部</li>
-							<li class="mui-table-view-cell" onclick="clickCompetency(this)">技术</li>
-							<li class="mui-table-view-cell" onclick="clickCompetency(this)">产品</li>
-							<li class="mui-table-view-cell" onclick="clickCompetency(this)">运营</li>
-							<li class="mui-table-view-cell" onclick="clickCompetency(this)">市场</li>
-							<li class="mui-table-view-cell" onclick="clickCompetency(this)">招聘</li>
-							<li class="mui-table-view-cell" onclick="clickCompetency(this)">管理</li>
-							<li class="mui-table-view-cell" onclick="clickCompetency(this)">投融资</li>
-							<li class="mui-table-view-cell" onclick="clickCompetency(this)">战略</li>
+							<li class="mui-table-view-cell" onclick="clickCompetency(this)">种子</li>
+							<li class="mui-table-view-cell" onclick="clickCompetency(this)">天使</li>
+							<li class="mui-table-view-cell" onclick="clickCompetency(this)">A轮</li>
+							<li class="mui-table-view-cell" onclick="clickCompetency(this)">B轮</li>
+							<li class="mui-table-view-cell" onclick="clickCompetency(this)">C轮</li>
+							<li class="mui-table-view-cell" onclick="clickCompetency(this)">D轮</li>
+							<li class="mui-table-view-cell" onclick="clickCompetency(this)">E轮</li>
+							<li class="mui-table-view-cell" onclick="clickCompetency(this)">Pre-IPO</li>
+							<li class="mui-table-view-cell" onclick="clickCompetency(this)">已上市</li>
 						</ul>
 					</div>
 				</div>
@@ -717,8 +718,8 @@ div.screening>ul>li {
 			}
 			var imgUrl = "http://www.dreamnotechina.com/img/weixinimg/share_img.jpg";
 			var lineLink = window.location.href;
-			var descContent = "点豆大讲堂---为进取心而生，专注职场“传、帮、带”";
-			var shareTitle = "点豆大讲堂";
+			var descContent = "梦想笔记---为进取心而生，专注职场“传、帮、带”";
+			var shareTitle = "梦想笔记";
 			<%if(list != null && !list.isEmpty()) {%>
 				imgUrl = "http://www.dreamnotechina.com/files/imgs/<%=list.get(0).getImage()%>";
 				descContent = "<%=list.get(0).getTeacher()%>";

@@ -398,8 +398,8 @@ window.addEventListener( "load", function() {
 }, false );
 var imgUrl = "http://www.dreamnotechina.com/img/weixinimg/share_img.jpg";
 var lineLink = window.location.href;
-var descContent = "点豆大讲堂---为进取心而生，专注职场“传、帮、带”";
-var shareTitle = "点豆大讲堂";
+var descContent = "梦想笔记---为进取心而生，专注职场“传、帮、带”";
+var shareTitle = "梦想笔记";
 <%if (list != null && list.size() != 0) {%>
 	imgUrl = "http://www.dreamnotechina.com/files/imgs/<%=list.get(0).getImage()%>";
 	descContent = "<%=list.get(0).getTeacher()%>";

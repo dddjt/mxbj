@@ -47,7 +47,7 @@ if(cam != null && cam.getAd_link() != null && !cam.getAd_link().isEmpty()) {
 		<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
 		<meta name="keywords" content="" />
 		<meta name="description" content="" />
-		<title>点豆大讲堂</title>
+		<title>梦想笔记</title>
 		<link rel="stylesheet" href="/css/weixincss/bootstrap.min.css">
 		<link rel="stylesheet" href="/css/weixincss/style.css">
 		<link rel="stylesheet" href="/css/weixincss/newplay.css">
@@ -265,7 +265,7 @@ if(cam != null && cam.getAd_link() != null && !cam.getAd_link().isEmpty()) {
 		<div class="weui_dialog_confirm" id="comfirm_dialog" style="display: none;">
 	        <div class="weui_mask"></div>
 	        <div class="weui_dialog">
-	            <div class="weui_dialog_hd"><strong class="weui_dialog_title">点豆大讲堂</strong></div>
+	            <div class="weui_dialog_hd"><strong class="weui_dialog_title">梦想笔记</strong></div>
 	            <div class="weui_dialog_bd" id="comfirm_dialog_tips"></div>
 	            <div class="weui_dialog_ft">
 	                <a onclick="dialogClickCancel()" class="weui_btn_dialog default">取消</a>
@@ -387,7 +387,7 @@ if(cam != null && cam.getAd_link() != null && !cam.getAd_link().isEmpty()) {
 		   /* document.getElementById("comfirm_dialog_tips").innerHTML = "您不是VIP会员，只能观看课时1的视频！观看更多视频，请购买VIP会员！";
 		   document.getElementById("comfirm_dialog").style.display = ""; */
 		   var btnArray = ['购买', '取消'];
-			mui.confirm('您不是VIP会员，只能观看课时1的视频！观看更多视频，请购买VIP会员！', '点都大讲堂', btnArray, function(e) {
+			mui.confirm('您不是VIP会员，只能观看课时1的视频！观看更多视频，请购买VIP会员！', '梦想笔记', btnArray, function(e) {
 				if (e.index == 0) {
 					window.location.href="/weixin/getDDCBBuyVip";
 				} else {
@@ -417,13 +417,13 @@ if(cam != null && cam.getAd_link() != null && !cam.getAd_link().isEmpty()) {
 	var lineLink = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx519f44ba99e2ec36&redirect_uri=http%3A%2F%2Fwww.dreamnotechina.com%2Fweixin%2FweixinLogin%3Fview%3Dddcb_open_class&response_type=code&scope=snsapi_userinfo&state=123#wechat_redirect";
 	var descContent = "点豆成兵---为进取心而生，专注职场“传、帮、带”";
 	var shareTitle = "点豆成兵";
-	var shareCircleTitle = "<%=cm.getName()%>-<%=cm.getTeacher()%>-[点豆大讲堂]";
+	var shareCircleTitle = "<%=cm.getName()%>-<%=cm.getTeacher()%>-[梦想笔记]";
 	<%if(list != null && !list.isEmpty()) {%>
 		imgUrl = "http://www.dreamnotechina.com/files/imgs/<%=list.get(0).getTeacher_image()%>";
 		<%-- descContent = "<%=list.get(0).getDetails().replaceAll("\r\n", "")%>";
 		shareTitle = "<%=list.get(0).getSubTitle().replaceAll("\r\n", "")%>"; --%>
 		descContent = "主讲人：<%=cm.getTeacher()%>";
-		shareTitle = "<%=cm.getName()%>-[点豆大讲堂]";
+		shareTitle = "<%=cm.getName()%>-[梦想笔记]";
 	<%}%>
 	wx.config({
 		appId: 'wx519f44ba99e2ec36',

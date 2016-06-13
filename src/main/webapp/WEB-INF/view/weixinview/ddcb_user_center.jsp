@@ -387,7 +387,7 @@ List<LiveCourseModel> userStudyRecordCourseList = userStudyRecordDao.getUserStud
 							<div class="tab-pane fade in" id="live_class">
 								<div class="container" style="padding-left:0px;padding-right:0px;">
 									<%if(collectionLiveCourseList == null || collectionLiveCourseList.size() == 0) { %>
-										<div style="margin-top:50%;text-align:center;">您还没有收藏任何录播课！</div>
+										<div style="margin-top:50%;text-align:center;">您还没有收藏任何录播案例！</div>
 									<%} else { %>
 										<ul id="collection_live_class_data_list" class="mui-table-view">
 											<%for(LiveCourseModel lcm : collectionLiveCourseList) { %>

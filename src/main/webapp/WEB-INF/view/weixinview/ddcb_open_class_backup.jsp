@@ -25,7 +25,7 @@ result = WeixinTools.getSign("http://www.dreamnotechina.com/weixin/weixinLogin?v
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-		<title>点豆大讲堂</title>
+		<title>梦想笔记</title>
 		<link href="/css/weixincss/mui.min.css" rel="stylesheet" />
 		<link href="/css/weixincss/mui.picker.min.css" rel="stylesheet" />
 		<link href="/css/weixincss/mui.poppicker.css" rel="stylesheet" />
@@ -472,8 +472,8 @@ result = WeixinTools.getSign("http://www.dreamnotechina.com/weixin/weixinLogin?v
 			})(mui, document);
 			var imgUrl = "http://www.dreamnotechina.com/img/weixinimg/share_img.jpg";
 			var lineLink = window.location.href;
-			var descContent = "点豆大讲堂---为进取心而生，专注职场“传、帮、带”";
-			var shareTitle = "点豆大讲堂";
+			var descContent = "梦想笔记---为进取心而生，专注职场“传、帮、带”";
+			var shareTitle = "梦想笔记";
 			<%if(list != null && !list.isEmpty()) {%>
 				imgUrl = "http://www.dreamnotechina.com/files/imgs/<%=list.get(0).getImage()%>";
 				descContent = "<%=list.get(0).getTeacher()%>";
