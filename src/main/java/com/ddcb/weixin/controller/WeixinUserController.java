@@ -459,13 +459,13 @@ public class WeixinUserController {
 		WeixinPayUtils.setNotifyurl("http://www.dreamnotechina.com/weixinVIPPayResult");
 		String fee = "";
 		if(("1").equals(userType)) {
-			fee = "200.00";
+			fee = "50.00";
 		} else if(("2").equals(userType)) {
-			fee = "500.00";
+			fee = "120.00";
 		} else {
-			fee = "1200.00";
+			fee = "300.00";
 		}
-		if(("osmQtxOk3jZ9nGqEdWIQQWJeepM0").equals(openId)) fee = "0.01";
+		//if(("osmQtxOk3jZ9nGqEdWIQQWJeepM0").equals(openId)) fee = "0.01";
 		logger.debug("userChooseWeixinPay openid : {}", openId);
 		logger.debug("userChooseWeixinPay fee : {}", fee);
 		WxPayDto tpWxPay = new WxPayDto();
